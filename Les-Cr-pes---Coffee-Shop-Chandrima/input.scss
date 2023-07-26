@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary: #1C2448;
+    --body-text: #324A6D;
+    --white-element: #FFF;
+    --blue-bg-color: #7AA5D8;
+    --light-bg-color: #F3F5F8;
+    --overlay: rgba(0, 0, 0, 0.30);
+
+    --red: #B60000;
+    --light-red: #FA8D7F;
+
+    --Poppins: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--body-text, #324A6D);
+    &.primary_btn {
+        border-radius: 1.875rem;
+        background: #7AA5D8;
+        padding: 0.9375rem 2.5rem;
+        color: var(--white-element, #FFF);
+        text-align: center;
+        transition: 0.4s background ease-in-out;
+        display: inline-block;
+
+        /* Accent Text */
+        font-family: var(--Poppins);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: var(--light-red);
+        }
+    }
+}
+
+h1 {
+    font-family: var(--Poppins);
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.375rem;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: var(--Poppins);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4rem; /* 107.692% */
+    text-transform: capitalize;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.625rem; /* 65% */
+    text-transform: capitalize;
+}
+
+h4 {
+
+    font-family: Poppins;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.625rem; /* 118.182% */
+    text-transform: capitalize;
+}
+
+h5 {
+    /* Box Title */
+    font-family: Poppins;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.625rem; /* 118.182% */
+    text-transform: capitalize;
+}
+
+p {
+    color: var(--body-text, #324A6D);
+
+    /* Body Text */
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5rem; /* 150% */
+    text-transform: capitalize;
+}
+
+#banner {
+    position: relative;
+    margin-bottom: 3rem;
+
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.29);
+    }
+    h1 {
+        color: #FFF;
+
+        /* Primary */
+        font-family: Poppins;
+        font-size: 4.0625rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 4.375rem; /* 107.692% */
+        text-transform: capitalize;
+    }
+    .container {
+        position: relative;
+        padding-bottom: 3rem;
+    }
+    p {
+        color: #FFF;
+
+        /* Subtitle */
+        font-family: Poppins;
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem; /* 145.455% */
+    }
+}
+
+#cta {
+    position: relative;
+    margin: 6rem 0;
+
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.29);
+    }
+    .container {
+        position: relative;
+    }
+    h2 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+}
+/**
+* Header Styles
+*/
+#topbar {
+    background-color: var(--light-bg-color, #F3F5F8);
+    padding: 1.25rem 0;
+    span {
+        color: var(--body-text, #324A6D);
+        font-size: 1rem;
+        font-family: var(--Poppins);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5rem;
+        text-transform: capitalize;
+    }
+    img {
+        width: 1.12306rem;
+        height: 1.2rem;
+    }
+    .col-md-6 {
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+#navbar {
+    .navbar-brand {
+        width: 120px;
+    }
+    .navbar-nav {
+        column-gap: 10px;
+        a {
+            color: var(--primary, #1C2448);
+            font-size: 1rem;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.25rem;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+
+/**
+* Main Styles
+*/
+/*** Hero ***/
+#hero {
+    padding: 8rem 0 0;
+    h1 {
+        color: var(--primary, #1C2448);
+    }
+    p {
+        /* Subtitle */
+        font-family: Poppins;
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+}
+
+
+/*** About ***/
+#about {
+    margin: 6rem 0;
+    h2 {
+        color: var(--primary, #1C2448);
+        margin-bottom: 1.5rem;
+    }
+}
+
+/*** CTA ***/
+.home {
+    #cta {
+        background: url(images/CTA.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.gallery {
+    #cta {
+        background: url(images/gallery-cta.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/*** Banner ***/
+.about {
+    #banner {
+        background: url(images/about-banner.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.gallery {
+    #banner {
+        background: url(images/gallery-banner.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/*** Gallery ***/
+#gallery {
+    .gallery {
+        .gallery-list {
+            margin-bottom: 2rem;
+            .image-grid {
+                img {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}
+
+
+/*** Menu ***/
+#menu {
+    margin: 6rem 0;
+    h2 {
+        margin-bottom: 4rem;
+    }
+    .menu-items {
+        margin-bottom: 4rem;
+    }
+    .menu-note {
+        color: #F98B7C;
+        font-family: Poppins;
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.625rem; /* 118.182% */
+        text-transform: capitalize;
+        margin-top: 3rem;
+    }
+}
+/**
+* Footer Styles
+*/
+#copyright {
+    background: var(--blue-bg-color);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/**
+* Media Queries
+*/
+
+@media only screen and (min-width: 991px) {
+    .home {
+        #navbar {
+            .navbar-brand {
+                position: relative;
+                img {
+                    position: absolute;
+                    top: -15px;
+                    left: 0;
+                    width: 150px;
+                    max-width: 180px;
+                }
+            }
+            .nav-link {
+                text-align: center;
+            }
+        }
+    }
+
+    #about {
+        .about_1 {
+            p {
+                padding-right: 6rem;
+            }
+        }
+        .about_2 {
+            h2 {
+                padding-left: 6rem;
+            }
+            p {
+                padding-left: 6rem;
+            }
+            .primary_btn {
+                display: inline-block;
+                margin-left: 6rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    #cta {
+        p {
+            padding:  0 5rem;
+        }
+    }
+
+    #menu-banner {
+        .col-lg-6 {
+            &:first-child {
+                padding-left: 8rem;
+                p {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    #topbar {
+        .col-md-6 {
+            text-align: left;
+            div {
+                display: flex;
+                justify-content: end;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    h2 {
+        font-size: 2.3rem;
+        line-height: 2.4rem;
+    }
+    #topbar {
+        .col-md-6 {
+            text-align: center;
+            div {
+                justify-content: center;
+            }
+        }
+    }
+
+    #hero {
+        padding: 4rem 0 0;
+    }
+    #about {
+        margin: 4rem 0;
+    }
+    #cta {
+        margin: 4rem 0;
+    }
+}
